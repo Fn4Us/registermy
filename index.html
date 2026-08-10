@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Page Title</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap');
+
+    :root {
+      --maroon-900: #46161a;
+      --maroon-700: #7c2b32;
+      --maroon-500: #a8434a;
+      --maroon-100: #f1dcda;
+
+      --grey-900: #262421;
+      --grey-700: #55514a;
+      --grey-500: #847e73;
+      --grey-300: #d9d3c7;
+      --grey-150: #ece7dd;
+      --grey-100: #f3efe7;
+
+      --paper: #faf8f3;
+      --white: #ffffff;
+
+      --radius: 5px;
+
+      --font-display: 'Fraunces', Georgia, serif;
+      --font-body: 'Inter', system-ui, sans-serif;
+      --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--grey-100);
+      color: var(--grey-900);
+      font-family: var(--font-body);
+    }
+
+    /* ------------------------------ Header ------------------------------ */
+
+    .masthead {
+      background: var(--maroon-900);
+      color: var(--grey-100);
+      padding: 1.75rem 1.5rem 1.5rem;
+      text-align: center;
+      border-bottom: 3px solid var(--maroon-700);
+    }
+
+    .masthead .eyebrow {
+      margin: 0 0 0.35rem;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--maroon-100);
+    }
+
+    .masthead h1 {
+      margin: 0;
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: clamp(1.7rem, 4vw, 2.6rem);
+      letter-spacing: 0.01em;
+    }
+
+    .masthead .rule {
+      width: 64px;
+      height: 2px;
+      background: var(--maroon-500);
+      margin: 0.7rem auto;
+      border: none;
+    }
+
+    .masthead .subtitle {
+      margin: 0;
+      font-size: 0.92rem;
+      color: var(--grey-150);
+    }
+
+    /* ------------------------------ Content ----------------------------- */
+
+    main {
+      max-width: 1180px;
+      margin: 1.5rem auto;
+      padding: 0 1.25rem;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+    /* ------------------------------- Cards ------------------------------ */
+
+    .info-card {
+      background: var(--paper);
+      border: 1px solid var(--grey-300);
+      border-radius: var(--radius);
+      padding: 1.1rem;
+    }
+
+    .info-card h2 {
+      margin: 0 0 0.75rem;
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--maroon-900);
+    }
+
+    .info-card p {
+      margin: 0 0 0.85rem;
+      font-size: 0.88rem;
+      line-height: 1.55;
+      color: var(--grey-700);
+    }
+
+    .info-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* -------------------------------- Media ------------------------------ */
+
+    .media {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      margin-bottom: 0.9rem;
+      overflow: hidden;
+      background: var(--grey-150);
+      border-radius: var(--radius);
+    }
+
+    .media img,
+    .media iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      object-fit: cover;
+    }
+
+    /* -------------------------- Bottom Section -------------------------- */
+
+    .about-box {
+      background: var(--paper);
+      border: 1px solid var(--grey-300);
+      border-radius: var(--radius);
+      padding: 1.1rem 1.15rem;
+    }
+
+    .about-box h2 {
+      margin: 0 0 0.6rem;
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--maroon-900);
+    }
+
+    .about-box p {
+      margin: 0;
+      font-size: 0.88rem;
+      line-height: 1.55;
+      color: var(--grey-700);
+    }
+
+    /* -------------------------------- Footer ----------------------------- */
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem 2rem;
+      font-size: 0.78rem;
+      color: var(--grey-500);
+    }
+
+    /* ---------------------------- Responsive ---------------------------- */
+
+    @media (max-width: 800px) {
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="masthead">
+    <p class="eyebrow">DMHS.CLUB Registration</p>
+
+    <h1>How to Register a DMHS.club Link</h1>
+
+    <hr class="rule">
+
+    <p class="subtitle">
+      YourClubName.dmhs.club
+    </p>
+  </header>
+
+
+  <main>
+
+    <section class="card-grid">
+      <!-- ====================== CARD 1 ====================== -->
+
+      <article class="info-card">
+
+        <h2>Google Classroom join link, Google Forms link, etc.</h2>
+
+        <div class="media">
+          <img
+            src="https://www.studiesweekly.com/wp-content/uploads/2021/05/Google-Classroom.jpg"
+            alt="Google classroom logo"
+          >
+        </div>
+
+        <p>
+          Any DMHS.club link that connects to either Google Classroom, Google Forms, or anything else that does not support custom URLs will use URL Forwarding. When putting in your website's link, it will bring you to the Classroom join link or other link you provide. An example can be found at <a href="https://urlforwarding.dmhs.club">https://urlforwarding.dmhs.club</a>, which brings you to the DMHS website.
+        </p>
+
+        <p>
+          All information needed to be provided is the link you wish to redirect to. <br><br> If it is for Google Classroom, ensure it looks like the following: <b>classroom.google.com/c/ODcyMDY5MzY5NjEz?cjc=yfa2ht2y</b> <br><br> If it is for Google Forms, ensure the permissions are set properly, and ensure the link looks like the following: <b>forms.gle/ShBQdZHiCmkrJndK6</b>
+        </p>
+
+      </article>
+
+
+      <!-- ====================== CARD 2 ====================== -->
+
+      <article class="info-card">
+
+        <h2>Google Sites</h2>
+
+        <div class="media">
+          <iframe
+            src="https://www.youtube.com/watch?v=jCOg-ttCV4Q&t=148s"
+            title="YouTube video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <p>
+          Google Sites will require a 3-way back and forth.
+          Watch the video for how to get your TXT record, and send that to me. <b> NOTE: </b> In the video, where he inputs "www", you will need to input whatever you wish the text before "dmhs.club" to be in your URL. Then, the rest of the input will be "dmhs.club". Once I set the TXT record, I'll notify you. You will then be able to continue the verification process. <br> <br> Once you have verified the domain, it will prompt you to enter the CNAME record to "ghs.googlehosted.com". Email me, I will make this change. Once I get back to you, you can press "Done". In approximately 30 minutes or so, the new URL should connect to your Google Sites.
+        </p>
+
+        <p>
+          If any problems arise, let me know. An example can be found at <a href="https://sitesexample.dmhs.club">https://sitesexample.dmhs.club</a>, which is a prototype site for the Cruciverbalist's Club.
+        </p>
+
+      </article>
+
+
+      <!-- ====================== CARD 3 ====================== -->
+
+      <article class="info-card">
+
+        <h2>GitHub Pages</h2>
+
+        <div class="media">
+          <img
+            src="https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png"
+            alt="Github Logo"
+          >
+        </div>
+
+        <p>
+          If you're using GitHub, I presume you know how to use GitHub pages. Ensure the repo is already live when you request a subdomain. I can set up the A Records needed no problem, and GitHub will do the CNAME record for you.
+        </p>
+
+        <p>
+          <b>IMPORTANT:</b> If you are using other hosting providers such as <i>Cloudflare, Vercel, Netlify,</i> and others, subdomains like those of DMHS.club will not work. If you can find an alternative hosting service that does allow registration of subdomains, tell me what records I need to add and I will do so.
+        </p>
+
+      </article>
+
+    </section>
+
+
+    <!-- ===================== BOTTOM BOX ===================== -->
+
+    <section class="about-box">
+
+      <h2>Email all info to eriddle68@susdgapps.org</h2>
+
+      <p>
+        If you have any questions, let me know. I will attempt to reply to all concerns on a same-day schedule, but please allow for up to 48 hours for a reply. 
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    Ethan Riddle (c) 2026
+  </footer>
+
+</body>
+</html>
